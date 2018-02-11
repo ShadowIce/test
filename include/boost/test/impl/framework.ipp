@@ -939,9 +939,6 @@ setup_loggers()
                 stream_logger.setup( runtime_config::get<std::string>( runtime_config::btrt_log_sink ),
                                      log_cleaner );
             unit_test_log.set_stream( stream_logger.ref() );
-            //TODO Add here as well
-
-
         }
         else
         {
