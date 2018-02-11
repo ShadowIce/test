@@ -1119,6 +1119,8 @@ init( init_unit_test_func init_func, int argc, char* argv[] )
 
     if( runtime_config::has( runtime_config::btrt_report_sink ) )
         s_frk_state().m_report_sink.setup( runtime_config::get<std::string>( runtime_config::btrt_report_sink ) );
+
+        // TODO here as well
     results_reporter::set_stream( s_frk_state().m_report_sink.ref() );
 
     // 40. Register default test observers
